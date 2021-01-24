@@ -1,8 +1,6 @@
 <?php
 
 require_once "pdo.php";
-require_once "bootstrap.php";
-
 // Demand a GET parameter
 if ( ! isset($_GET['name']) || strlen($_GET['name']) < 1  ) {
     die('Name parameter missing');
@@ -42,24 +40,17 @@ if (isset($_POST['make']) && isset($_POST['year']) && isset($_POST['mileage'])){
 <!DOCTYPE html>
 <html>
 <head>
-<title>Gerard Willem de Way, Autos database</title>
+<title>86c34004</title>
 </head>
 <body>
 <div class="container">
 <h1>Autos database</h1>
-<?php
-if ( isset($_REQUEST['name']) ) {
-    echo "<p>Welcome: ";
-    echo htmlentities($_REQUEST['name']);
-    echo "</p>\n";
-}
-?>
 
 <form method="post">
         <p>make : <input type="text" name="make" size="40"></p>
         <p>year : <input type="text" name="year"></p>
         <p>mileage : <input type="text" name="mileage"></p>
-        <p><input type="submit" value="add new"></p>
+        <p><input type="submit" name="Add" value="Add"></p>
 </form>
 <?php 
 if ($warning_message !== false){

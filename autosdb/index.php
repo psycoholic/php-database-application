@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Gerard Willem de Way - Auto Database</title>
-<?php require_once "bootstrap.php"; ?>
+<title>86c34004</title>
 </head>
 <body>
 <div class="container">
