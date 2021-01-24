@@ -52,40 +52,6 @@ if (isset($_POST['make']) && isset($_POST['year']) && isset($_POST['mileage'])){
         <p>mileage : <input type="text" name="mileage"></p>
         <p><input type="submit" name="Add" value="Add"></p>
 </form>
-<?php 
-if ($warning_message !== false){
-    echo('<p style="color: red;">'.htmlentities($warning_message)."</p>\n");
-}
-if ($succes_message !== false){
-    echo('<p style="color: green;">'.htmlentities($succes_message)."</p>\n");
-}
-?>
-<h2>Autos</h2>
-<?php
-    $sql = "SELECT * FROM autos";
-    $pdo->prepare($sql);
-    $stmt = $pdo->query($sql);
-    echo("<pre>\n");
-    echo('<table border="1">'."\n");
-    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
-        echo "<tr><td>";
-        echo($row['auto_id']);
-        echo "</td><td>";
-        echo $row['make'];
-        echo "</td><td>";
-        echo $row['year'];
-        echo "</td><td>";
-        echo $row['mileage'];
-        echo "</td>";
-        echo "</tr>\n"; 
-    }
-    echo "</table>\n";
-    echo("</pre>\n");
-?>
-
-<form method="post">
-<input type="submit" name="logout" value="Logout">
-</form>
 </div>
 </body>
 </html>

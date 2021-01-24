@@ -1,12 +1,10 @@
 <?php 
 session_start();
-$name = $_SESSION['name'];
-if (!isset($name)){
+if (!isset($_SESSION['name'])){
     die("Not logged in");
 }
-
+require_once "pdo.php";
 ?>
-
 <html><head>
 <title>86c34004</title>
 
@@ -25,6 +23,40 @@ if (!isset($name)){
 <p>
 </p><li>
 </li></ul>
+<?php
+if (isset($_SESSION['warning_message'])) {
+    echo('<p style="color: red;">'.htmlentities($warning_message)."</p>\n");
+}
+if (isset($_SESSION['succes_message'])){
+    echo('<p style="color: green;">'.htmlentities($succes_message)."</p>\n");
+}
+?>
+<h2>Autos</h2>
+<?php
+    $sql = "SELECT * FROM autos";
+    $pdo->prepare($sql);
+    $stmt = $pdo->query($sql);
+    echo("<pre>\n");
+    echo('<table border="1">'."\n");
+    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+        echo "<tr><td>";
+        echo($row['auto_id']);
+        echo "</td><td>";
+        echo $row['make'];
+        echo "</td><td>";
+        echo $row['year'];
+        echo "</td><td>";
+        echo $row['mileage'];
+        echo "</td>";
+        echo "</tr>\n"; 
+    }
+    echo "</table>\n";
+    echo("</pre>\n");
+?>
+
+<form method="post">
+<input type="submit" name="logout" value="Logout">
+</form>
 <p>
 <a href="add.php">Add New</a> |
 <a href="logout.php">Logout</a>
