@@ -17,46 +17,31 @@ require_once "pdo.php";
 </head>
 <body>
 <div class="container">
-<h1>Tracking Autos for csev@umich.edu</h1>
-<h2>Automobiles</h2>
-<ul>
-<p>
-</p><li>
-</li></ul>
+<h1>Tracking Autos for <?php echo($_SESSION['name']) ?></h1>
 <?php
-if (isset($_SESSION['warning_message'])) {
-    echo('<p style="color: red;">'.htmlentities($warning_message)."</p>\n");
-}
 if (isset($_SESSION['succes_message'])){
-    echo('<p style="color: green;">'.htmlentities($succes_message)."</p>\n");
+    echo('<p style="color: green;">'.htmlentities($_SESSION['succes_message'])."</p>\n");
+    unset($_SESSION['succes_message']);
 }
 ?>
-<h2>Autos</h2>
+<h2>Automobiles</h2>
 <?php
     $sql = "SELECT * FROM autos";
     $pdo->prepare($sql);
     $stmt = $pdo->query($sql);
-    echo("<pre>\n");
-    echo('<table border="1">'."\n");
+    echo('<ul>'."\n");
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
-        echo "<tr><td>";
+        echo "<li>";
         echo($row['auto_id']);
-        echo "</td><td>";
+        echo " ";
         echo $row['make'];
-        echo "</td><td>";
+        echo " ";
         echo $row['year'];
-        echo "</td><td>";
+        echo " ";
         echo $row['mileage'];
-        echo "</td>";
-        echo "</tr>\n"; 
     }
-    echo "</table>\n";
-    echo("</pre>\n");
+    echo "</ul>\n";
 ?>
-
-<form method="post">
-<input type="submit" name="logout" value="Logout">
-</form>
 <p>
 <a href="add.php">Add New</a> |
 <a href="logout.php">Logout</a>
