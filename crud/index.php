@@ -50,7 +50,7 @@ if (isset($_SESSION['name'])){
 <p>Attempt to <a href="add.php">add data</a> without logging in</p>
 <?php } ?>
 <?php if (isset($_SESSION['name'])){ ?>
-<a href="add.php">Add New</a>
+<a href="add.php">Add New Entry</a>
 <p><a href="logout.php">Logout</a></p>
 <?php } ?>
 </div>
