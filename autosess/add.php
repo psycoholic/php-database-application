@@ -36,9 +36,9 @@ if (isset($_POST['make']) && isset($_POST['year']) && isset($_POST['mileage'])){
 
         $stmt = $pdo->prepare($sql);
         $stmt->execute(array(
-            ':make' => htmlentities ($make),
-            ':year' => htmlentities ($year),
-            ':mileage' => htmlentities ($mileage)
+            ':make' => $make,
+            ':year' => $year,
+            ':mileage' => $mileage
         ));
         $succes_message = "Record inserted";
         $_SESSION['succes_message'] = $succes_message;
