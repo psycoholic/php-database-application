@@ -1,0 +1,95 @@
+2021-01-27 10:29:10 Error: [Cake\Database\Exception\MissingExtensionException] Database driver Cake\Database\Driver\Mysql cannot be used due to a missing PHP extension or unmet dependency in C:\xampp\htdocs\cms\cms\vendor\cakephp\cakephp\src\Database\Connection.php on line 202
+Exception Attributes: array (
+  'driver' => 'Cake\\Database\\Driver\\Mysql',
+)
+Stack Trace:
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\cakephp\src\Database\Connection.php:142
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\cakephp\src\Datasource\ConnectionRegistry.php:90
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php:110
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\cakephp\src\Datasource\ConnectionManager.php:212
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\bake\src\Command\ModelCommand.php:172
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\bake\src\Command\ModelCommand.php:97
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\bake\src\Command\ModelCommand.php:81
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\cakephp\src\Console\BaseCommand.php:179
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\cakephp\src\Console\CommandRunner.php:336
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- C:\xampp\htdocs\cms\cms\bin\cake.php:12
+
+
+
+2021-01-27 10:31:11 Error: [Cake\Database\Exception\MissingExtensionException] Database driver Cake\Database\Driver\Mysql cannot be used due to a missing PHP extension or unmet dependency in C:\xampp\htdocs\cms\cms\vendor\cakephp\cakephp\src\Database\Connection.php on line 202
+Exception Attributes: array (
+  'driver' => 'Cake\\Database\\Driver\\Mysql',
+)
+Stack Trace:
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\cakephp\src\Database\Connection.php:142
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\cakephp\src\Datasource\ConnectionRegistry.php:90
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php:110
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\cakephp\src\Datasource\ConnectionManager.php:212
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\bake\src\Command\ModelCommand.php:172
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\bake\src\Command\ModelCommand.php:97
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\bake\src\Command\ModelCommand.php:81
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\cakephp\src\Console\BaseCommand.php:179
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\cakephp\src\Console\CommandRunner.php:336
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- C:\xampp\htdocs\cms\cms\bin\cake.php:12
+
+
+
+2021-01-27 10:38:05 Error: [Cake\Database\Exception\MissingExtensionException] Database driver Cake\Database\Driver\Mysql cannot be used due to a missing PHP extension or unmet dependency in C:\xampp\htdocs\cms\cms\vendor\cakephp\cakephp\src\Database\Connection.php on line 202
+Exception Attributes: array (
+  'driver' => 'Cake\\Database\\Driver\\Mysql',
+)
+Stack Trace:
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\cakephp\src\Database\Connection.php:142
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\cakephp\src\Datasource\ConnectionRegistry.php:90
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php:110
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\cakephp\src\Datasource\ConnectionManager.php:212
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\bake\src\Command\ModelCommand.php:172
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\bake\src\Command\ModelCommand.php:97
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\bake\src\Command\ModelCommand.php:81
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\cakephp\src\Console\BaseCommand.php:179
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\cakephp\src\Console\CommandRunner.php:336
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- C:\xampp\htdocs\cms\cms\bin\cake.php:12
+
+
+
+2021-01-27 10:39:02 Error: [Cake\Database\Exception\MissingExtensionException] Database driver Cake\Database\Driver\Mysql cannot be used due to a missing PHP extension or unmet dependency in C:\xampp\htdocs\cms\cms\vendor\cakephp\cakephp\src\Database\Connection.php on line 202
+Exception Attributes: array (
+  'driver' => 'Cake\\Database\\Driver\\Mysql',
+)
+Stack Trace:
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\cakephp\src\Database\Connection.php:142
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\cakephp\src\Datasource\ConnectionRegistry.php:90
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php:110
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\cakephp\src\Datasource\ConnectionManager.php:212
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\bake\src\Command\ModelCommand.php:172
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\bake\src\Command\ModelCommand.php:97
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\bake\src\Command\ModelCommand.php:81
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\cakephp\src\Console\BaseCommand.php:179
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\cakephp\src\Console\CommandRunner.php:336
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- C:\xampp\htdocs\cms\cms\bin\cake.php:12
+
+
+
+2021-01-27 10:40:15 Error: [Cake\Database\Exception\MissingExtensionException] Database driver Cake\Database\Driver\Mysql cannot be used due to a missing PHP extension or unmet dependency in C:\xampp\htdocs\cms\cms\vendor\cakephp\cakephp\src\Database\Connection.php on line 202
+Exception Attributes: array (
+  'driver' => 'Cake\\Database\\Driver\\Mysql',
+)
+Stack Trace:
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\cakephp\src\Database\Connection.php:142
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\cakephp\src\Datasource\ConnectionRegistry.php:90
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php:110
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\cakephp\src\Datasource\ConnectionManager.php:212
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\bake\src\Command\ModelCommand.php:172
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\bake\src\Command\ModelCommand.php:97
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\bake\src\Command\ModelCommand.php:81
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\cakephp\src\Console\BaseCommand.php:179
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\cakephp\src\Console\CommandRunner.php:336
+- C:\xampp\htdocs\cms\cms\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- C:\xampp\htdocs\cms\cms\bin\cake.php:12
+
+
+
